@@ -3,13 +3,9 @@
 // ESP8266 + ESPAsyncWebServer + Live Web Dashboard
 // ============================================================
 
+#include "secrets.h"
 #define BLYNK_PRINT Serial
-#define BLYNK_TEMPLATE_ID "TMPL3wJhchs_s"
-#define BLYNK_TEMPLATE_NAME "IOT Fire Escape Guidance System"
-#define BLYNK_AUTH_TOKEN "YOUR_BLYNK_AUTH_TOKEN"
 
-#define WIFI_SSID "YOUR_WIFI_HOTSPOT_NAME"
-#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -17,8 +13,8 @@
 #include <ESPAsyncWebServer.h>
 
 // ---------------- WIFI ----------------
-const char* ssid = "ESPTEST";
-const char* password = "12345678";
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
 // ---------------- BLYNK EVENT ----------------
 // IMPORTANT: This must exactly match the Event Code shown in
