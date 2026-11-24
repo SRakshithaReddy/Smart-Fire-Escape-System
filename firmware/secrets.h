@@ -1,0 +1,6 @@
+#define BLYNK_TEMPLATE_ID "TMPL3wJhchs_s"
+#define BLYNK_TEMPLATE_NAME "IOT Fire Escape Guidance System"
+#define BLYNK_AUTH_TOKEN "mqMWef-W6NcnMWk78LEQLa8SlPLR-KBe"
+
+#define WIFI_SSID "ESPTEST"
+#define WIFI_PASSWORD "12345678"
