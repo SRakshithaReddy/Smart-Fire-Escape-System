@@ -1,0 +1,12 @@
+# Private Blynk credentials
+firmware/secrets.h
+
+# Arduino build files
+*.o
+*.elf
+*.hex
+*.bin
+
+# Temporary files
+*.tmp
+.DS_Store
