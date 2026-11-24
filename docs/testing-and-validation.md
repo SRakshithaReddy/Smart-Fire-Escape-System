@@ -36,3 +36,24 @@ Firmware compilation and hardware validation should be recorded separately, with
 ## 5. Conclusion
 
 This test plan provides a structured approach to evaluating the prototype's sensor detection, alert mechanisms, web monitoring and cloud notification features.
+
+## 6. Firmware Compilation Results
+
+The firmware was successfully compiled using Arduino IDE with the NodeMCU ESP8266 board configuration.
+
+### Memory Usage
+
+| Memory Type | Used | Available | Usage |
+|---|---:|---:|---:|
+| RAM | 32,156 bytes | 80,192 bytes | 40% |
+| Instruction RAM (IRAM) | 61,427 bytes | 65,536 bytes | 93% |
+| Flash | 297,512 bytes | 1,048,576 bytes | 28% |
+
+### Result
+
+- Firmware compilation: Successful
+- Compilation errors: None reported
+- Hardware upload: Pending
+- Physical sensor testing: Pending
+
+**Observation:** IRAM usage is relatively high at 93%. Further firmware modifications should be monitored to avoid exceeding available instruction memory.
